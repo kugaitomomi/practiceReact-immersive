@@ -1,0 +1,299 @@
+header {
+  position: fixed;
+  width: 100%;
+  background: #232323;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px 20px 10px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 16px;
+}
+
+header nav .navArea {
+  display: flex;
+  color: #989898;
+}
+
+header nav .navArea li {
+  margin: 0 40px 0 0;
+}
+
+header nav .navArea li:last-child {
+  margin: 0;
+}
+nav ul li a,
+footer .ft_content ul li a {
+  position: relative;
+}
+nav ul li a:before,
+footer .ft_content ul li a:before{
+    background: #1ed760;
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    margin: auto;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+nav ul li a:hover,
+footer .ft_content ul li a:hover {
+  color: #1ed760;
+}
+nav ul li a:hover:before,
+footer .ft_content ul li a:hover:before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+.searchArea {
+  display: flex;
+}
+
+.searchArea [type="search"] {
+  border: #989898 1px solid;
+  color: #fff;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 10px;
+}
+
+.searchArea button {
+  background: #989898;
+  color: #fff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 10px; 
+}
+
+.searchArea button:hover {
+  transform: translateY(2px);
+}
+
+/*Main Area*/
+main {
+  background: #fff;
+  padding: 110px 0 0 0;
+
+}
+
+main .mv {
+  box-sizing: border-box;
+  width: 900px;
+  margin: 0 auto 40px;
+  padding: 75px 42px 80px 50px;
+  background-size: cover;
+  background-image: url(images/splash.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 6px 5px 11px -5px rgba(35, 35, 35, 0.55);
+}
+
+.catch {
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 80px;
+}
+
+.catchSub {
+  text-align: right;
+  color: #fff;
+}
+
+.catchSub p {
+  margin-bottom: 10px;
+}
+
+.catchSub p:last-of-type {
+  margin: 0;
+}
+
+.containerSec {
+  background: #eeeeee;
+  padding: 70px 0 20px 0;
+}
+
+section .container {
+
+  width: 900px;
+  margin: 0 auto;
+}
+
+section .container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.subText {
+  margin: 0 0 20px 0;
+}
+
+section article .containerIn {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+section article .containerIn {
+  display: flex;
+  margin: 0 0 40px 0;
+}
+
+section article .containerIn img {
+  width: 200px;
+}
+
+.containerIn_R {
+  padding: 20px;
+}
+
+.containerIn_R h3 {
+  color: #999999;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+}
+
+.containerIn_R p {
+  line-height: 1.5;
+}
+
+.logoArea div {
+  width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.logoArea div ul {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.logoArea div ul li {
+  width: 200px;
+  margin: 0 25px 20px 0;
+}
+
+.logoArea div ul li img {
+  width: 100%;
+}
+
+
+.logoArea .text {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #343434;
+  padding: 40px 0;
+}
+footer .ft_content{
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: 0 auto 40px;
+}
+
+footer .ft_content h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+footer .ft_content ul li{
+  color: #aaaaaa;
+  margin-bottom: 15px;
+}
+
+.copyright {
+  color: #aaaaaa;
+  text-align: center;
+}
+
+.contactArea {
+  width: 900px;
+  margin: 0 auto 40px;
+}
+
+.contactArea h3{
+  text-align: center;
+  font-size: 24px;
+  margin: 0 0 30px 0;
+}
+.contactArea .row,
+.contactArea .rowIn {
+  display: flex;
+  margin: 0 0 20px 0;
+  align-items: center;
+}
+
+.colL {    
+  flex: 1 0 0%;
+}
+
+.contactArea .row label,
+.contactArea .rowIn legend {
+  width: 30%;
+}
+
+.contactArea label,
+.contactArea legend {
+  font-size: 18px;
+}
+
+.form-control01,
+#detailContent {
+  border: 1px solid #aaaaaa;
+  border-radius: 8px;
+  padding: 6px 12px;
+  width: 100%;
+}
+
+.form-control01:focus,
+#detailContent:focus,
+.searchArea [type="search"]:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 30%);
+}
+
+.select {
+  margin: 0 0 10px 0;
+}
+
+.select label{ 
+  margin: 0 10px 0 0;
+}
+
+.contactArea button {
+  width: 200px;
+  border: 1px solid #aaaaaa;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  margin: 40px auto 0;
+  display: block;
+  box-shadow: 0 4px 0 #232323;
+}
+
+.contactArea button:hover {
+  transform: translateY(4px);
+    box-shadow: none;
+}
+
+.badge {
+  color: #ff0000;
+}
