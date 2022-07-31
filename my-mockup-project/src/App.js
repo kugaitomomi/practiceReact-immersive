@@ -1,11 +1,11 @@
 import './reset.css';
 import './style.css';
-import Header from './header';
-import Mv from './mv';
-import Subcontents from './subcontents';
-import Logo from './logo';
-import Form from './form';
-import Footer from './footer';
+import Header from './Header';
+import Mv from './Mv';
+import Subcontents from './Subcontents';
+import Logo from './Logo';
+import Form from './Form';
+import Footer from './Footer';
 
 function App() {
   return (
